@@ -10,6 +10,8 @@
 
 # In[ ]:
 
+
+import git
 import sqlite3
 import speech_recognition as sr
 import datetime
@@ -27,6 +29,12 @@ from selenium import webdriver # to control browser operations
 
 
 # In[ ]:
+
+repo = git.Repo('https://github.com/ycbro/voice_assistant/blob/main/Anu.py')
+repo.remotes.origin.pull()
+#... Continue with your Code.
+
+
 #def dataupload:
 #    conn = sqlite3.connect('search.db')
  #   c = conn.cursor()
